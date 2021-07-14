@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left</title>
+
+    <style>
+
+        html,body{
+          display: grid;
+          height: 100%;
+          place-items: center;
+          background-color:darkslategray;
+        
+        
+        
+        }
+        
+        h1{
+    
+    font-family:monospace;
+    font-size: 35px;
+    border-radius: 30px;
+    width: 300px;
+    height: 300px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 200px;
+    padding-top: 55px;
+    background: linear-gradient(90deg, #00ffb8, #13ce);
+    animation-name:rotate ;
+   
+    animation: rotate 2.8s infinite;
+    border-style: groove;
+    border-color: #00ffb8;
+
+}
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100%{
+    filter: hue-rotate(90deg);
+  }
+}
+        
+        button{
+    
+    font-family:monospace;
+    font-size: 20px;
+    border-radius: 30px;
+    width: 100px;
+    height: 40px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 3px;
+    background: darkslategray; 
+    cursor: pointer;
+  
+}
+
+.outer{
+
+    border-color: #00ffb8;
+    border-style: groove;
+ background: linear-gradient(90deg, #00ffb8, #13ce);
+ width: 105px;
+ height: 43px;
+ border-radius: 40px;
+ padding-top: 2px;
+ padding-left: 4px;
+ animation-name:rotate ;
+ animation: rotate 2.8s infinite;
+
+}
+
+@keyframes rotate {
+  0%{
+    filter: hue-rotate(0deg);
+   
+  }
+  100%{
+    filter: hue-rotate(90deg);
+    
+  }
+}
+
+  p{
+
+    font-family:monospace;
+    font-size: 19px;
+ padding-bottom: 90px;
+    text-align: center;
+  
+
+  }
+
+        
+            </style>
+
+
+</head>
+<body>
+    
+    <h1>Left ! 
+    <p><br> The left button has been clicked !<br>
+        To return to the home page <br> click ( go back ) button &#8595;</p></h1>
+    <a href="pp.php">
+    <div class="outer button">
+        
+        <button>go back</button> 
+        </div></a>
+</body>
+</html>
